@@ -1,0 +1,94 @@
+site_name: "ChaoXoX · AI Blog"
+site_description: "AI、Agent、Workflow、RAG、微调与 HuggingFace 模型评价的中文笔记"
+site_url: https://chaoxox.github.io
+repo_name: ChaoXoX/ChaoXoXBlog
+repo_url: https://github.com/ChaoXoX/ChaoXoXBlog
+copyright: "© 2025 ChaoXoX"
+
+nav:
+  - 首页: index.md
+  - 关于: about.md
+  - 文章:
+      - 总览: posts/index.md
+      - AI 路线图: posts/ai-roadmap.md
+      - Agent 基础: posts/agent-basics.md
+      - Workflow 编排: posts/workflow-orchestration.md
+      - RAG 手册: posts/rag-handbook.md
+      - 知识库构建: posts/knowledge-base.md
+      - 提示工程 (Prompt): posts/prompt-engineering.md
+      - 上下文工程: posts/context-engineering.md
+      - 微调笔记: posts/fine-tuning-notes.md
+      - HuggingFace 模型评价: posts/hf-model-eval.md
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: blue
+      accent: orange
+    - scheme: slate
+      primary: blue
+      accent: orange
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - codehilite
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.tilde
+
+plugins:
+  - search
+  - blogging:
+      posts_dir: posts
+      blog_dir: posts
+      time_format: "%Y-%m-%d"
+      pagination_per_page: 5
+  - i18n:
+      default_language: zh
+      languages:
+        zh: 中文
+      nav_translations:
+        首页: 首页
+        关于: 关于
+        文章: 文章
+  - mermaid2:
+      arguments:
+        theme: neutral
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ChaoXoX
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/ChaoXoX
+    - icon: fontawesome/brands/rss
+      link: /feed.xml
+  generator: false
