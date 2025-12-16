@@ -1,5 +1,5 @@
 ---
-title: "ChaoXoX 的 AI 笔记"
+title: "Chao 的 AI 笔记"
 date: 2025-01-05
 tags: [AI, Agent, Workflow, RAG, 微调, HuggingFace]
 ---
@@ -26,5 +26,4 @@ tags: [AI, Agent, Workflow, RAG, 微调, HuggingFace]
 - 模型表现如何判定：[HuggingFace 模型评价](posts/hf-model-eval.md)
 
 ## 联系我
-- GitHub: https://github.com/ChaoXoX
-- X (Twitter): https://x.com/ChaoXoX
+欢迎通过 GitHub 讨论区提出问题或分享经验：[ChaoXoX GitHub]
